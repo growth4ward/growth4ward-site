@@ -8,6 +8,7 @@
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://growth4ward.com/" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preload" as="image" href="/assets/stock/marketing-team.jpg" imagesrcset="/assets/stock/marketing-team.jpg 1x" fetchpriority="high" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Growth4ward | Hyper-Local Marketing for Home Service Companies" />
   <meta property="og:description" content="Hyper-local digital marketing for roofers, siding contractors, window companies, and remodelers that need more local leads." />
@@ -20,7 +21,9 @@
   <meta name="twitter:image" content="https://growth4ward.com/assets/stock/marketing-team.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/styles.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VWKQLQV25"></script>
   <script>
@@ -28,21 +31,12 @@
   function gtag(){dataLayer.push(arguments);} 
   gtag('js', new Date());
   gtag('config', 'G-2VWKQLQV25');
-  document.addEventListener('click', function(e) {
-    const a = e.target.closest('a');
-    if (!a) return;
-    const href = a.getAttribute('href') || '';
-    const text = (a.textContent || '').trim().slice(0, 100);
-    if (a.classList.contains('btn')) gtag('event', 'cta_click', { link_text: text, link_url: href });
-    if (href.startsWith('tel:')) gtag('event', 'phone_click', { link_text: text, link_url: href });
-    if (href.startsWith('mailto:')) gtag('event', 'email_click', { link_text: text, link_url: href });
-  });
   </script>
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand brand-lockup" href="/"><img src="/assets/branding/logo-mark.svg" alt="Growth4ward logo" class="brand-logo" /><span>Growth4ward</span></a>
+      <a class="brand brand-lockup" href="/"><img src="/assets/branding/logo-mark.svg" alt="Growth4ward logo" class="brand-logo" width="38" height="38" /><span>Growth4ward</span></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
       <nav class="nav" id="site-nav">
         <a href="/">Home</a><a href="/services/">Services</a><a href="/about/">About</a><a href="/portfolio/">Portfolio</a><a href="/blog/">Resources</a><a href="/contact/" class="btn btn-sm">Get a Quote</a>
@@ -73,10 +67,10 @@
         </div>
         <div class="social-row">
           <span>Social presence:</span>
-          <a href="https://www.facebook.com/growth4ward/" target="_blank" rel="noopener noreferrer" aria-label="Growth4ward on Facebook"><img src="/assets/icons/facebook.svg" class="social-icon" alt="Facebook" /></a>
-          <img src="/assets/icons/instagram.svg" class="social-icon" alt="Instagram" />
-          <img src="/assets/icons/linkedin.svg" class="social-icon" alt="LinkedIn" />
-          <img src="/assets/icons/google.svg" class="social-icon" alt="Google" />
+          <a href="https://www.facebook.com/growth4ward/" target="_blank" rel="noopener noreferrer" aria-label="Growth4ward on Facebook"><img src="/assets/icons/facebook.svg" class="social-icon" alt="Facebook" width="20" height="20" /></a>
+          <img src="/assets/icons/instagram.svg" class="social-icon" alt="Instagram" width="20" height="20" />
+          <img src="/assets/icons/linkedin.svg" class="social-icon" alt="LinkedIn" width="20" height="20" />
+          <img src="/assets/icons/google.svg" class="social-icon" alt="Google" width="20" height="20" />
         </div>
       </div>
     </section>
@@ -93,7 +87,7 @@
             <h3>Good fit industries</h3>
             <ul><li>Roofing companies</li><li>Siding contractors</li><li>Window companies</li><li>Remodelers</li><li>Exterior service businesses</li></ul>
           </div>
-          <img src="/assets/graphics/industry-reference-final.jpg" alt="Outline graphic of a contractor holding a hammer" class="industry-graphic" />
+          <img src="/assets/graphics/industry-reference-final.jpg" alt="Outline graphic of a contractor holding a hammer" class="industry-graphic" width="200" height="170" />
         </div>
       </div>
       <div class="container usp-grid">
@@ -143,7 +137,7 @@
   </main>
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div><a class="brand brand-lockup footer-brand" href="/"><img src="/assets/branding/logo-mark.svg" alt="Growth4ward logo" class="brand-logo" /><span>Growth4ward</span></a><p>Hyper-local digital marketing for roofers, siding contractors, window companies, and remodelers that need more local leads.</p></div>
+      <div><a class="brand brand-lockup footer-brand" href="/"><img src="/assets/branding/logo-mark.svg" alt="Growth4ward logo" class="brand-logo" width="38" height="38" /><span>Growth4ward</span></a><p>Hyper-local digital marketing for roofers, siding contractors, window companies, and remodelers that need more local leads.</p></div>
       <div><h3>Pages</h3><ul><li><a href="/services/">Services</a></li><li><a href="/about/">About</a></li><li><a href="/portfolio/">Portfolio</a></li><li><a href="/contact/">Contact</a></li></ul></div>
       <div><h3>Focus</h3><ul><li>Local SEO</li><li>Google Business Profile</li><li>Lead generation</li><li>Reputation management</li></ul></div>
     </div>
@@ -153,17 +147,29 @@
   (function(){
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.getElementById('site-nav');
-    if (!toggle || !nav) return;
-    toggle.addEventListener('click', function(){
-      const open = nav.classList.toggle('nav-open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      document.body.classList.toggle('menu-open', open);
-    });
-    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      nav.classList.remove('nav-open');
-      toggle.setAttribute('aria-expanded', 'false');
-      document.body.classList.remove('menu-open');
-    }));
+    if (toggle && nav) {
+      toggle.addEventListener('click', function(){
+        const open = nav.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        document.body.classList.toggle('menu-open', open);
+      });
+      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        nav.classList.remove('nav-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
+      }));
+    }
+    window.addEventListener('load', function(){
+      document.addEventListener('click', function(e) {
+        const a = e.target.closest('a');
+        if (!a || typeof gtag !== 'function') return;
+        const href = a.getAttribute('href') || '';
+        const text = (a.textContent || '').trim().slice(0, 100);
+        if (a.classList.contains('btn')) gtag('event', 'cta_click', { link_text: text, link_url: href });
+        if (href.startsWith('tel:')) gtag('event', 'phone_click', { link_text: text, link_url: href });
+        if (href.startsWith('mailto:')) gtag('event', 'email_click', { link_text: text, link_url: href });
+      }, { passive: true });
+    }, { once: true });
   })();
   </script>
 </body>
