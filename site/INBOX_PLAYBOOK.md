@@ -14,7 +14,7 @@ Handle inbound email professionally, reply to real opportunities, ignore junk, f
 - `janie@growth4ward.com`
 
 ### Default phone number
-- **260-267-5421**
+- **415-997-3793**
 
 ### Jeff direct number
 - **415-997-3793**
@@ -98,7 +98,7 @@ We’d be happy to learn more about your business and what kind of help you’re
 - website, if you have one
 - what kind of help you need right now
 
-You can also reach us at **260-267-5421** if that’s easier.
+You can also reach us at **415-997-3793** if that’s easier.
 
 Best,  
 Growth4ward

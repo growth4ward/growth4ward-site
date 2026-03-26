@@ -13,62 +13,76 @@
   <meta property="og:description" content="Talk to Growth4ward about local SEO, lead generation, websites, and digital marketing for home service businesses." />
   <meta property="og:url" content="https://growth4ward.com/contact/" />
   <meta property="og:site_name" content="Growth4ward" />
-  <meta property="og:image" content="https://growth4ward.com/assets/branding/logo-mark.svg" />
+  <meta property="og:image" content="https://growth4ward.com/assets/stock/analytics-laptop.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Contact | Growth4ward" />
   <meta name="twitter:description" content="Talk to Growth4ward about local SEO, lead generation, websites, and digital marketing for home service businesses." />
-  <meta name="twitter:image" content="https://growth4ward.com/assets/branding/logo-mark.svg" />
+  <meta name="twitter:image" content="https://growth4ward.com/assets/stock/analytics-laptop.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css" />
-
-  <script type="application/ld+json">{
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Contact",
-    "url": "https://growth4ward.com/contact/"
-  }</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VWKQLQV25"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date());
+  gtag('config', 'G-2VWKQLQV25');
+  </script>
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand brand-lockup" href="/"><img src="/assets/branding/logo-mark.svg" alt="Growth4ward logo" class="brand-logo" /><span>Growth4ward</span></a>
-      <nav class="nav">
-        <a href="/">Home</a>
-        <a href="/services/">Services</a>
-        <a href="/about/">About</a>
-        <a href="/portfolio/">Portfolio</a>
-        <a href="/blog/">Resources</a>
-        <a href="/contact/" class="btn btn-sm">Get a Quote</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav class="nav" id="site-nav">
+        <a href="/">Home</a><a href="/services/">Services</a><a href="/about/">About</a><a href="/portfolio/">Portfolio</a><a href="/blog/">Resources</a><a href="/contact/" class="btn btn-sm">Get a Quote</a>
       </nav>
     </div>
   </header>
   <main>
-    <section class="section">
-      <div class="container narrow">
-        <p class="eyebrow">Contact</p>
-        <h1>Let’s Talk About Your Growth Goals</h1>
-        <p class="lead">If you run a roofing, siding, window, remodeling, or other home service business and want more local leads, Growth4ward can help.</p>
+    <section class="hero hero-bg" style="background: linear-gradient(90deg, rgba(16,35,61,0.76) 0%, rgba(16,35,61,0.55) 38%, rgba(16,35,61,0.28) 100%), url('/assets/stock/analytics-laptop.jpg') center/cover no-repeat;">
+      <div class="container hero-bg-inner">
+        <div class="hero-overlay-card">
+          <p class="eyebrow">Contact</p>
+          <h1>Request a Free Local Visibility Audit</h1>
+        </div>
       </div>
     </section>
-    <section class="section section-alt">
-      <div class="container two-col">
+    <section class="section">
+      <div class="container two-col contact-hero">
         <div>
-          <h2>What to Expect</h2>
-          <p>We’ll talk through your business goals, your current local visibility, where leads are coming from, and the biggest opportunities to improve performance.</p>
-          <ul class="trust-list">
-            <li>Website and local presence review</li>
-            <li>Lead generation opportunities</li>
-            <li>SEO and Google Business Profile discussion</li>
-            <li>Recommendations based on your market</li>
-          </ul>
+          <div class="quote-bubble">
+            <div class="review-stars">★★★★★</div>
+            <p><strong>Need clarity on your next marketing step?</strong> We can help assess your current visibility, website, Google Business Profile, and lead flow.</p>
+          </div>
+          <div class="info-box inline-box">
+            <h3>What a local visibility audit looks at</h3>
+            <p>A local visibility audit is a practical review of the things that most directly affect whether nearby homeowners can find your business, trust what they see, and take the next step. Instead of vague marketing talk, it looks at the real visibility and conversion points that shape lead flow.</p>
+            <p>We review how your website presents your services, whether your Google Business Profile supports local map visibility, how strong your trust signals are, and where friction may be costing you calls or quote requests. The goal is to identify the clearest opportunities to improve visibility and conversion without guessing.</p>
+            <ul>
+              <li>Website clarity, calls to action, and conversion flow</li>
+              <li>Google Business Profile strength and local market positioning</li>
+              <li>Review and reputation signals that affect trust</li>
+              <li>Lead follow-up gaps that may be costing booked work</li>
+            </ul>
+          </div>
+          <div class="info-box inline-box">
+            <h3>Direct contact</h3>
+            <p><strong>Email:</strong> <a href="mailto:contact@growth4ward.com">contact@growth4ward.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:4159973793">(415) 997-3793</a></p>
+          </div>
         </div>
-        <div class="info-box">
-          <h3>Ready to Get Started?</h3>
-          <p>Use your preferred contact method for now, and we can wire in a proper form or CRM intake next.</p>
-          <p><strong>Email:</strong> hello@growth4ward.com</p>
-          <p><strong>Next step:</strong> free visibility / lead review</p>
+        <div class="form-card">
+          <form id="contact-form" class="contact-form" action="/api/contact" method="post">
+            <label>Name<input type="text" name="name" required></label>
+            <label>Email<input type="email" name="email" required></label>
+            <label>Business Name<input type="text" name="business"></label>
+            <label>Service Area<input type="text" name="service_area"></label>
+            <label>How can we help?<textarea name="message" rows="6" required></textarea></label>
+            <button class="btn" type="submit">Send Message</button>
+            <p class="form-note" id="form-status" aria-live="polite"></p>
+          </form>
         </div>
       </div>
     </section>
@@ -76,5 +90,45 @@
   <footer class="site-footer">
     <div class="container footer-bottom"><p>© 2026 Growth4ward. All rights reserved.</p></div>
   </footer>
+  <script>
+  (function(){
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', function(){
+        const open = nav.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        nav.classList.remove('nav-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }));
+    }
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('focusin', function(){ gtag('event', 'contact_form_start', { form_name: 'contact' }); }, { once: true });
+      form.addEventListener('submit', async function(e){
+        e.preventDefault();
+        const status = document.getElementById('form-status');
+        const submitButton = form.querySelector('button[type="submit"]');
+        const data = new FormData(form);
+        if (status) status.textContent = 'Sending...';
+        if (submitButton) submitButton.disabled = true;
+        try {
+          const response = await fetch('/api/contact', { method: 'POST', body: data });
+          const result = await response.json();
+          if (!response.ok || !result.ok) throw new Error(result.error || 'Submit failed');
+          gtag('event', 'form_submit', { form_name: 'contact', page_location: window.location.pathname, submission_method: 'cloudflare_function' });
+          form.reset();
+          if (status) status.textContent = 'Thanks — your message has been received.';
+        } catch (err) {
+          if (status) status.textContent = 'Sorry — there was a problem sending your message. Please email contact@growth4ward.com.';
+        } finally {
+          if (submitButton) submitButton.disabled = false;
+        }
+      });
+    }
+  })();
+  </script>
 </body>
 </html>

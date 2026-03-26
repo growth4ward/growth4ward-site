@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f5f9ff"/>
+    </linearGradient>
+    <linearGradient id="barBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5f7cff"/>
+      <stop offset="100%" stop-color="#2f4df7"/>
+    </linearGradient>
+    <linearGradient id="lineRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f16a74"/>
+      <stop offset="100%" stop-color="#ee4040"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#0f1d39" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="900" height="620" rx="34" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <rect x="36" y="36" width="828" height="548" rx="28" fill="#ffffff" stroke="#e3ecf8"/>
+  </g>
+  <text x="78" y="100" fill="#10233d" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Growth Performance Snapshot</text>
+  <text x="78" y="138" fill="#5f7498" font-family="Inter, Arial, sans-serif" font-size="18">Illustrative example of how better visibility turns into booked jobs</text>
+
+  <g>
+    <rect x="78" y="168" width="164" height="86" rx="18" fill="#f6faff" stroke="#dfeaf8"/>
+    <text x="102" y="206" fill="#5f7498" font-family="Inter, Arial, sans-serif" font-size="16">Lead Conversion</text>
+    <text x="102" y="236" fill="#10233d" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">+38%</text>
+    <circle cx="208" cy="212" r="14" fill="#e9f7ef"/>
+    <path d="M203 212l4 4 8-10" stroke="#2caa67" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g>
+    <rect x="258" y="168" width="164" height="86" rx="18" fill="#f6faff" stroke="#dfeaf8"/>
+    <text x="282" y="206" fill="#5f7498" font-family="Inter, Arial, sans-serif" font-size="16">Call Volume</text>
+    <text x="282" y="236" fill="#10233d" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">+24%</text>
+    <circle cx="388" cy="212" r="14" fill="#e9f7ef"/>
+    <path d="M383 212l4 4 8-10" stroke="#2caa67" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g>
+    <rect x="438" y="168" width="164" height="86" rx="18" fill="#f6faff" stroke="#dfeaf8"/>
+    <text x="462" y="206" fill="#5f7498" font-family="Inter, Arial, sans-serif" font-size="16">Review Growth</text>
+    <text x="462" y="236" fill="#10233d" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">4.9★</text>
+    <text x="544" y="236" fill="#f4b400" font-family="Inter, Arial, sans-serif" font-size="24">★★★★★</text>
+  </g>
+  <g>
+    <rect x="618" y="168" width="204" height="86" rx="18" fill="#f6faff" stroke="#dfeaf8"/>
+    <text x="642" y="206" fill="#5f7498" font-family="Inter, Arial, sans-serif" font-size="16">Market Focus</text>
+    <text x="642" y="236" fill="#10233d" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Visibility</text>
+  </g>
+
+  <g opacity="0.9" stroke="#e4ecf7" stroke-width="2">
+    <path d="M92 320H820"/><path d="M92 372H820"/><path d="M92 424H820"/><path d="M92 476H820"/><path d="M92 528H820"/>
+    <path d="M152 286V540"/><path d="M242 286V540"/><path d="M332 286V540"/><path d="M422 286V540"/><path d="M512 286V540"/><path d="M602 286V540"/><path d="M692 286V540"/>
+  </g>
+
+  <g>
+    <rect x="130" y="430" width="54" height="98" rx="12" fill="#dde8f8"/>
+    <rect x="220" y="400" width="54" height="128" rx="12" fill="#d5e3f8"/>
+    <rect x="310" y="364" width="54" height="164" rx="12" fill="#cbdcff"/>
+    <rect x="400" y="334" width="54" height="194" rx="12" fill="#c1d5ff"/>
+    <rect x="490" y="296" width="54" height="232" rx="12" fill="#b2cbff"/>
+    <rect x="580" y="246" width="74" height="282" rx="16" fill="url(#barBlue)"/>
+  </g>
+
+  <path d="M130 418C160 392 192 376 220 382C246 388 272 350 310 346C346 342 362 304 404 298C444 292 458 246 500 240C546 234 566 196 618 190" stroke="url(#lineRed)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#ee4040">
+    <circle cx="130" cy="418" r="8"/><circle cx="220" cy="382" r="8"/><circle cx="310" cy="346" r="8"/><circle cx="404" cy="298" r="8"/><circle cx="500" cy="240" r="8"/><circle cx="618" cy="190" r="8"/>
+  </g>
+  <path d="M618 190L588 174L594 206L618 190Z" fill="#ee4040"/>
+
+  <g fill="#10233d" font-family="Inter, Arial, sans-serif" font-size="20">
+    <text x="118" y="560">Traffic</text>
+    <text x="216" y="560">Calls</text>
+    <text x="302" y="560">Leads</text>
+    <text x="392" y="560">Quotes</text>
+    <text x="468" y="560">Close Rate</text>
+    <text x="578" y="560">Revenue</text>
+  </g>
+</svg>

@@ -21,12 +21,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VWKQLQV25"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date());
+gtag('config', 'G-2VWKQLQV25');
+document.addEventListener('click', function(e) {
+  const a = e.target.closest('a');
+  if (!a) return;
+  const href = a.getAttribute('href') || '';
+  const text = (a.textContent || '').trim().slice(0, 100);
+  if (a.classList.contains('btn')) gtag('event', 'cta_click', { link_text: text, link_url: href });
+  if (href.startsWith('tel:')) gtag('event', 'phone_click', { link_text: text, link_url: href });
+  if (href.startsWith('mailto:')) gtag('event', 'email_click', { link_text: text, link_url: href });
+});
+</script>
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand brand-lockup" href="/"><img src="/assets/branding/logo-mark.svg" alt="Growth4ward logo" class="brand-logo" /><span>Growth4ward</span></a>
-      <nav class="nav">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="site-nav">
         <a href="/">Home</a>
         <a href="/services/">Services</a>
         <a href="/about/">About</a>
@@ -76,5 +95,22 @@
       <p>© 2026 Growth4ward. All rights reserved.</p>
     </div>
   </footer>
+<script>
+  (function(){
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    if (!toggle || !nav) return;
+    toggle.addEventListener('click', function(){
+      const open = nav.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.classList.toggle('menu-open', open);
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('menu-open');
+    }));
+  })();
+  </script>
 </body>
 </html>
