@@ -33,7 +33,7 @@ export async function onRequestPost(context) {
       headers: { 'Access-Control-Allow-Origin': '*' }
     });
   } catch (error) {
-    return Response.json({ ok: false, error: 'Unable to submit form right now.' }, { status: 500 });
+    return Response.json({ ok: false, error: error?.message || 'Unable to submit form right now.' }, { status: 500 });
   }
 }
 
