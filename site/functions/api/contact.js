@@ -22,8 +22,8 @@ export async function onRequestPost(context) {
     const ip = context.request.headers.get('CF-Connecting-IP') || '';
     const userAgent = context.request.headers.get('User-Agent') || '';
 
-    if (context.env.DB) {
-      await context.env.DB.prepare(
+    if (context.env.growth4ward_contact) {
+      await context.env.growth4ward_contact.prepare(
         `INSERT INTO contact_messages (name, email, business, service_area, message, ip_address, user_agent)
          VALUES (?, ?, ?, ?, ?, ?, ?)`
       ).bind(name, email, business, service_area, message, ip, userAgent).run();
